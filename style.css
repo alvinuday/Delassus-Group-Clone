@@ -12,6 +12,13 @@ html {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+   
+    
+}
+body {
+    background-color: #e7524c;
+    transition: all 1.25s ease-in-out;
+
 }
 
 
@@ -419,19 +426,19 @@ svg {
     transition: 1s ease-in;
 }
 #slide1{
-    background-color:#e7524c;
+    background-color:transparent;
 }
 #slide2{
-    background-color:#f07038;
+    background-color:transparent;
 }
 #slide3{
-    background-color:#ef7591;
+    background-color:transparent;
 }
 #slide4{
-    background-color:#8bd3b9;
+    background-color:transparent;
 }
 #slide5{
-    background-color:#fbd349;
+    background-color:transparent;
 }
 
 .slider {

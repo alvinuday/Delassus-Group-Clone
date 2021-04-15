@@ -4,6 +4,7 @@
 const menuBtn = document.getElementsByClassName('menu-btn');
 const listitem1 = document.getElementById('overlayitems1');
 const overlayslider = document.getElementsByClassName('overlaypart1');
+var backgroundcol = document.getElementById('body');
 function openNav() {
     if (flag==false) {
     setTimeout(() =>{
@@ -78,18 +79,23 @@ setInterval(()=>{
     }
     if(counter==2){
         button2[0].style.backgroundColor = '#f7b744';
+        backgroundcol.style.backgroundColor = "#f07038";
+
     }
     if(counter==3){
         button2[0].style.backgroundColor = '#881e32';
+        backgroundcol.style.backgroundColor = "#ef7591";
     }
     if(counter==4){
         button2[0].style.backgroundColor = '#ef706b';
+        backgroundcol.style.backgroundColor = "#8bd3b9";
     }
     if(counter==5){
         button2[0].style.backgroundColor = '#ee5235';
+        backgroundcol.style.backgroundColor = "#fbd349";
     }
     if (counter==1) {
-      ;
+      backgroundcol.style.backgroundColor = "#e7524c";
     }
     else {
       document.getElementById(`manual${counter-1}`).classList.remove('checked');
