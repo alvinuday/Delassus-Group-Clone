@@ -1,11 +1,17 @@
-@import url(//db.onlinewebfonts.com/c/ac9525e5f200f57332b3080d0db9d8f6?family=Sailec-Medium);
+/* @import url(//db.onlinewebfonts.com/c/ac9525e5f200f57332b3080d0db9d8f6?family=Sailec-Medium);
 
 @import url(//db.onlinewebfonts.com/c/2fe381b3d8cf4ee5f331668970d8a65a?family=Sailec-Light);
-*{
+ */
+ 
+@font-face {
+    font-family: Sailec;
+    src: url(assests/sailec-regular.eot);
+  }
+ *{
     padding:0px;
     margin:0px;
     box-sizing: border-box;
-    font-family: Sailec-Light;
+    font-family: Sailec;
 
 }
 html {
@@ -480,8 +486,8 @@ input {
     transition:1s;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.301);
-    font-family: Sailec-Light;
-    font-weight:800;
+    font-family: Sailec;
+    font-weight:100;
     /* padding-right: 8px; */
     margin-right:8px ;
     
@@ -701,10 +707,10 @@ footer {
     top: 20vh;
     right: 30vw;
     font-size:130px;
-    font-family: Sailec-Light;
+    font-family: Sailec;
     color: white;
     float: right;
-    font-weight: 800;
+    font-weight: 100;
     transition-delay: 1s;
     position: relative;
     
@@ -732,10 +738,10 @@ footer {
 }
 /* <---------SLIDER2-----------> */
 #slide2header {
-    top: 200px;
+    top: -300px;
     right: 35vw;
     font-size:160px;
-    font-weight:800;
+    font-weight:100;
 }
 #slide2img1 {
     top: 20vh;
@@ -767,7 +773,7 @@ footer {
     top: 30vh;
     right: 33vw;
     font-size:150px;
-    font-weight:800;
+    font-weight:100;
     z-index: 1;
 }
 #slide3img1 {
@@ -794,7 +800,7 @@ footer {
     top: 30vh;
     right: 25vw;
     font-size:150px;
-    font-weight:800;
+    font-weight:100;
     z-index: 1;
 }
 #slide4img1 {
@@ -822,7 +828,7 @@ footer {
     top: 30vh;
     right: 30vw;
     font-size:150px;
-    font-weight:800;
+    font-weight:100;
     z-index: 1;
 
 }
