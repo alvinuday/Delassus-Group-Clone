@@ -64,7 +64,8 @@ var counter = 2;
 /* document.getElementById('radio1').checked =true; */
 document.getElementById('manual1').classList.add('checked');
 document.getElementsByClassName('auto-btn1')[0].classList.add('barcheck');
-setInterval(()=>{
+function slide() {
+  var slidetimer = setInterval(()=>{
     if (counter>5)
     {   
         document.getElementById(`manual${counter-1}`).classList.remove('checked');
@@ -103,6 +104,95 @@ setInterval(()=>{
     }
     ++counter;
 },5000)
+}
+slide()
+
+/* <-------MANUAL NAVIGATION----------> */
+document.getElementById('manual1').addEventListener('click',()=>{
+  counter = 1;
+  document.getElementById('manual1').classList.add('checked');
+  button2[0].style.backgroundColor = '#cf302b';
+  backgroundcol.style.backgroundColor = "#e7524c";
+  document.getElementById(`manual2`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn2`)[0].classList.remove('barcheck');
+  document.getElementById(`manual3`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn3`)[0].classList.remove('barcheck');
+  document.getElementById(`manual4`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn4`)[0].classList.remove('barcheck');
+  document.getElementById(`manual5`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn5`)[0].classList.remove('barcheck');
+  console.log("clicked")
+ 
+
+})
+document.getElementById('manual2').addEventListener('click',()=>{
+  counter = 2;
+  document.getElementById('manual2').classList.add('checked');
+  button2[0].style.backgroundColor = '#f7b744';
+  backgroundcol.style.backgroundColor = "#f07038";
+  document.getElementById(`manual1`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn1`)[0].classList.remove('barcheck');
+  document.getElementById(`manual3`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn3`)[0].classList.remove('barcheck');
+  document.getElementById(`manual4`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn4`)[0].classList.remove('barcheck');
+  document.getElementById(`manual5`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn5`)[0].classList.remove('barcheck');
+  console.log("clicked")
+ 
+
+})
+document.getElementById('manual3').addEventListener('click',()=>{
+  counter = 3;
+  document.getElementById('manual3').classList.add('checked');
+  button2[0].style.backgroundColor = '#881e32';
+  backgroundcol.style.backgroundColor = "#ef7591";
+  document.getElementById(`manual2`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn2`)[0].classList.remove('barcheck');
+  document.getElementById(`manual1`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn1`)[0].classList.remove('barcheck');
+  document.getElementById(`manual4`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn4`)[0].classList.remove('barcheck');
+  document.getElementById(`manual5`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn5`)[0].classList.remove('barcheck');
+  console.log("clicked")
+ 
+
+})
+document.getElementById('manual4').addEventListener('click',()=>{
+  counter = 4;
+  document.getElementById('manual4').classList.add('checked');
+  button2[0].style.backgroundColor = '#ef706b';
+        backgroundcol.style.backgroundColor = "#8bd3b9";
+  document.getElementById(`manual2`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn2`)[0].classList.remove('barcheck');
+  document.getElementById(`manual3`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn3`)[0].classList.remove('barcheck');
+  document.getElementById(`manual1`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn1`)[0].classList.remove('barcheck');
+  document.getElementById(`manual5`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn5`)[0].classList.remove('barcheck');
+  console.log("clicked")
+ 
+
+})
+document.getElementById('manual5').addEventListener('click',()=>{
+  counter = 5;
+  document.getElementById('manual5').classList.add('checked');
+  button2[0].style.backgroundColor = '#ee5235';
+  backgroundcol.style.backgroundColor = "#fbd349";
+  document.getElementById(`manual2`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn2`)[0].classList.remove('barcheck');
+  document.getElementById(`manual3`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn3`)[0].classList.remove('barcheck');
+  document.getElementById(`manual4`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn4`)[0].classList.remove('barcheck');
+  document.getElementById(`manual1`).classList.remove('checked');
+      document.getElementsByClassName(`auto-btn1`)[0].classList.remove('barcheck');
+  console.log("clicked")
+ 
+
+})
 
 /* <-------BUTTON--------> */
 const buttonContainer = document.getElementsByClassName('container-button');
